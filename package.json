@@ -17,7 +17,6 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "IBM Corp. and LoopBack contributors",
-
   "copyright.owner": "IBM Corp. and LoopBack contributors",
   "repository": {
     "type": "git",
@@ -67,6 +66,7 @@
     "@loopback/service-proxy": "^5.0.4",
     "@types/bcryptjs": "^2.4.2",
     "bcryptjs": "^2.4.3",
+    "loopback-connector-mongodb": "^5.6.0",
     "loopback-connector-rest": "^4.0.1",
     "tslib": "^2.4.0"
   },
