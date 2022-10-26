@@ -18,12 +18,12 @@ import {
   response,
 } from '@loopback/rest';
 import {Location} from '../models';
-import {TodoRepository} from '../repositories';
+import {LocationRepository} from '../repositories';
 
 export class LocationController {
   constructor(
-    @repository(TodoRepository)
-    public todoRepository : TodoRepository,
+    @repository(LocationRepository)
+    public locationRepository : LocationRepository,
   ) {}
 
   @post('/locations')
@@ -44,7 +44,7 @@ export class LocationController {
     })
     location: Omit<Location, 'id'>,
   ): Promise<Location> {
-    return this.todoRepository.create(location);
+    return this.locationRepository.create(location);
   }
 
   @get('/locations/count')
@@ -55,7 +55,7 @@ export class LocationController {
   async count(
     @param.where(Location) where?: Where<Location>,
   ): Promise<Count> {
-    return this.todoRepository.count(where);
+    return this.locationRepository.count(where);
   }
 
   @get('/locations')
@@ -73,7 +73,7 @@ export class LocationController {
   async find(
     @param.filter(Location) filter?: Filter<Location>,
   ): Promise<Location[]> {
-    return this.todoRepository.find(filter);
+    return this.locationRepository.find(filter);
   }
 
   @patch('/locations')
@@ -92,7 +92,7 @@ export class LocationController {
     location: Location,
     @param.where(Location) where?: Where<Location>,
   ): Promise<Count> {
-    return this.todoRepository.updateAll(location, where);
+    return this.locationRepository.updateAll(location, where);
   }
 
   @get('/locations/{id}')
@@ -108,7 +108,7 @@ export class LocationController {
     @param.path.number('id') id: number,
     @param.filter(Location, {exclude: 'where'}) filter?: FilterExcludingWhere<Location>
   ): Promise<Location> {
-    return this.todoRepository.findById(id, filter);
+    return this.locationRepository.findById(id, filter);
   }
 
   @patch('/locations/{id}')
@@ -126,7 +126,7 @@ export class LocationController {
     })
     location: Location,
   ): Promise<void> {
-    await this.todoRepository.updateById(id, location);
+    await this.locationRepository.updateById(id, location);
   }
 
   @put('/locations/{id}')
@@ -137,7 +137,7 @@ export class LocationController {
     @param.path.number('id') id: number,
     @requestBody() location: Location,
   ): Promise<void> {
-    await this.todoRepository.replaceById(id, location);
+    await this.locationRepository.replaceById(id, location);
   }
 
   @del('/locations/{id}')
@@ -145,6 +145,6 @@ export class LocationController {
     description: 'Location DELETE success',
   })
   async deleteById(@param.path.number('id') id: number): Promise<void> {
-    await this.todoRepository.deleteById(id);
+    await this.locationRepository.deleteById(id);
   }
 }
