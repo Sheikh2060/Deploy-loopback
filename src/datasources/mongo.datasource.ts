@@ -5,11 +5,11 @@ const config = {
   name: 'mongo',
   connector: 'mongodb',
   url: '',
-  host: 'heroku',
+  host: '',
   port: 27017,
   user: 'Sheikh_Ali',
   password: 'Sheikh20',
-  database: 'location',
+  database: '',
   useNewUrlParser: true,
   protocol: 'mongodb+srv'
 };
