@@ -4,14 +4,14 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'mongo',
   connector: 'mongodb',
-  url: '',
-  host: '',
+  url: 'mongodb+srv://Sheikh_Ali:Sheikh20@location.viynwgp.mongodb.net/?retryWrites=true&w=majority',
+  host: 'heroku',
   port: 27017,
   user: 'Sheikh_Ali',
   password: 'Sheikh20',
-  database: '',
+  database: 'location',
   useNewUrlParser: true,
-  // protocol: 'mongodb+srv'
+  protocol: 'mongodb+srv'
 };
 
 // Observe application's life cycle to disconnect the datasource when
