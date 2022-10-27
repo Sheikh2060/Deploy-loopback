@@ -11,7 +11,7 @@ const config = {
   password: 'Sheikh20',
   database: 'location',
   useNewUrlParser: true,
-  protocol: 'mongodb+srv'
+  // protocol: 'mongodb+srv'
 };
 
 // Observe application's life cycle to disconnect the datasource when
