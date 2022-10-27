@@ -6,10 +6,10 @@ const config = {
   connector: 'mongodb',
   url: '',
   host: '',
-  port: 0,
+  port: 27017,
   user: 'Sheikh_Ali',
   password: 'Sheikh20',
-  database: '',
+  database: 'location',
   useNewUrlParser: true,
   protocol: 'mongodb+srv'
 };
