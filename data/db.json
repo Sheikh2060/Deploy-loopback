@@ -2,7 +2,8 @@
   "ids": {
     "Todo": 5,
     "User": 5,
-    "UserCredentials": 2
+    "UserCredentials": 2,
+    "Location": 19
   },
   "models": {
     "Todo": {
@@ -16,6 +17,26 @@
     },
     "UserCredentials": {
       "1": "{\"password\":\"$2a$10$QrcA7GDOZ06TTXEBhuz87On8mcapb9qoU3rjWb7Z5pwBv7ZAbmXwa\",\"userId\":4,\"id\":1}"
+    },
+    "Location": {
+      "1": "{\"lat\":30,\"long\":50,\"dataTimeStamp\":70,\"altitude\":80,\"elevation\":90,\"id\":\"1\"}",
+      "2": "{\"lat\":30,\"long\":50,\"dataTimeStamp\":70,\"altitude\":80,\"elevation\":90,\"id\":\"2\"}",
+      "3": "{\"lat\":20,\"long\":60,\"dataTimeStamp\":120,\"altitude\":350,\"elevation\":750,\"id\":\"3\"}",
+      "4": "{\"lat\":20,\"long\":60,\"dataTimeStamp\":120,\"altitude\":350,\"elevation\":750,\"id\":\"4\"}",
+      "5": "{\"lat\":30,\"long\":60,\"dataTimeStamp\":20,\"altitude\":10,\"elevation\":90,\"id\":\"5\"}",
+      "6": "{\"lat\":20,\"long\":30,\"dataTimeStamp\":40,\"altitude\":50,\"elevation\":70,\"id\":\"6\"}",
+      "7": "{\"lat\":230,\"long\":30,\"dataTimeStamp\":40,\"altitude\":50,\"elevation\":60,\"id\":\"7\"}",
+      "8": "{\"lat\":230,\"long\":30,\"dataTimeStamp\":40,\"altitude\":50,\"elevation\":60,\"id\":\"8\"}",
+      "9": "{\"lat\":230,\"long\":30,\"dataTimeStamp\":40,\"altitude\":50,\"elevation\":60,\"id\":\"9\"}",
+      "10": "{\"lat\":20,\"long\":30,\"dataTimeStamp\":40,\"altitude\":50,\"elevation\":60,\"id\":\"10\"}",
+      "11": "{\"lat\":30,\"long\":60,\"dataTimeStamp\":80,\"altitude\":30,\"elevation\":50,\"id\":\"11\"}",
+      "12": "{\"lat\":30,\"long\":60,\"dataTimeStamp\":80,\"altitude\":30,\"elevation\":50,\"id\":\"12\"}",
+      "13": "{\"lat\":30,\"long\":60,\"dataTimeStamp\":80,\"altitude\":30,\"elevation\":50,\"id\":\"13\"}",
+      "14": "{\"lat\":80,\"long\":40,\"dataTimeStamp\":20,\"altitude\":90,\"elevation\":10,\"id\":\"14\"}",
+      "15": "{\"lat\":80,\"long\":40,\"dataTimeStamp\":20,\"altitude\":90,\"elevation\":10,\"id\":\"15\"}",
+      "16": "{\"lat\":80,\"long\":40,\"dataTimeStamp\":20,\"altitude\":90,\"elevation\":10,\"id\":\"16\"}",
+      "17": "{\"lat\":80,\"long\":40,\"dataTimeStamp\":20,\"altitude\":90,\"elevation\":10,\"id\":\"17\"}",
+      "18": "{\"lat\":80,\"long\":40,\"dataTimeStamp\":20,\"altitude\":90,\"elevation\":10,\"id\":\"18\"}"
     }
   }
 }
